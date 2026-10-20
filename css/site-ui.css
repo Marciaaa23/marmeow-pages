@@ -1,0 +1,49 @@
+/* Sidebar labels use the blog typeface; icons alone use Font Awesome. */
+#sidebar { font-family: inherit; font-size: 13px; }
+#sidebar .widget .widget-title, #sidebar .widget .widget-title span { font-family: inherit; font-size: 13px; font-weight: normal; }
+#sidebar .tagcloud a { font-size: 13px !important; }
+#sidebar .widget-title i, #nav-menu i { margin-right: .35em; }
+#sidebar .author-info p, #sidebar .post-list, #sidebar .year-index { font-size: 13px; }
+#sidebar .update-date { display: block; font-size: 11px; color: #999; }
+#sidebar .year-index span { margin: 0 .35em; }
+#nav-menu a { font-family: inherit; }
+#layout .post-archive h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 1.55em 0 .7em;
+}
+#layout .post-archive h2:first-child { margin-top: .35em; }
+.site-statistics { display: none; }
+.site-statistics.is-ready { display: block; }
+.site-translate {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
+  padding: .58em .75em;
+  color: #666;
+  background: rgba(255, 255, 255, .94);
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+}
+.site-translate:hover { color: #333; border-color: #bbb; }
+.site-translate.is-loading { opacity: .65; cursor: wait; }
+.site-translate-widget {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .site-translate { right: 16px; bottom: 16px; }
+}

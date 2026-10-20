@@ -1,0 +1,80 @@
+/* A photo essay: complete photographs, quiet spacing, personal captions. */
+.hualun-album .post-title {
+  margin: 0 0 32px;
+  color: #44413d;
+  font-size: clamp(24px, 2.5vw, 30px);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .08em;
+}
+.hualun-album .post-content { margin: 0; }
+.hualun-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin: 0;
+  column-count: auto;
+}
+.hualun-gallery .hualun-spread {
+  display: grid;
+  grid-template-columns: var(--columns, 1fr);
+  align-items: start;
+  gap: 24px;
+  margin: 0;
+}
+.hualun-gallery .hualun-spread--accent {
+  width: 78%;
+  align-self: flex-end;
+  margin: 12px 0;
+}
+.hualun-gallery figure { margin: 0; min-width: 0; }
+.hualun-gallery a {
+  display: block;
+  border: 0;
+  line-height: 0;
+  background: #f5f3ef;
+  cursor: zoom-in;
+}
+.hualun-gallery a:focus-visible {
+  outline: 2px solid #8b8173;
+  outline-offset: 6px;
+}
+.hualun-gallery img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.hualun-gallery .caption { display: none; }
+.hualun-gallery figcaption {
+  display: block;
+  margin: 10px 0 0;
+  color: #776f67;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .03em;
+  text-align: left;
+}
+.hualun-album .hualun-back {
+  display: inline-block;
+  margin-top: 56px;
+  padding: 8px 0;
+  color: #8a847b;
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.hualun-album .hualun-back:hover { color: #44413d; }
+@media (max-width: 768px) {
+  .hualun-album .post-title { margin-bottom: 26px; }
+  .hualun-gallery { gap: 24px; }
+  .hualun-gallery .hualun-spread { grid-template-columns: 1fr; gap: 24px; }
+  .hualun-gallery .hualun-spread--accent { width: 100%; margin: 0; }
+  .hualun-album .hualun-back { margin-top: 32px; }
+}
